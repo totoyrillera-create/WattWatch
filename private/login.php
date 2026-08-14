@@ -16,7 +16,6 @@ require_once __DIR__ . '/../src/Auth.php';
 
 Auth::start();
 
-// Already logged in → go to app
 if (Auth::check()) {
     header('Location: ../public/index.php');
     exit;
